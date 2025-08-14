@@ -123,13 +123,13 @@
   }
 }
 
-/* Apply to body or a wrapper */
+
 .page-content {
   animation: fadeInUp 1s ease-out forwards;
 }
 
 .page-content > * {
-  animation: fadeInUp 0.8s ease-out forwards;
+  animation: fadeInUp 0.9s ease-out forwards;
   opacity: 0; /* start invisible */
 }
 
