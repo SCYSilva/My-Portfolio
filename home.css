@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0d0d0d;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(20, 20, 20, 0.95);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transform: translateY(-20px);
+    opacity: 0;
+
+    /* Animations */
+    animation: fadeInDown 1s ease forwards, glowPulse 2s infinite ease-in-out;
+
+    /* Glow effect */
+    border-bottom: 3px solid #00f5ff; /* main glow color */
+    box-shadow: 0 4px 12px rgba(0, 245, 255, 0.7); /* glow spread */
+}
+
+/* Glow pulsing */
+@keyframes glowPulse {
+    0% { box-shadow: 0 4px 12px rgba(0, 245, 255, 0.6); }
+    50% { box-shadow: 0 4px 18px rgba(0, 245, 255, 0.9); }
+    100% { box-shadow: 0 4px 12px rgba(0, 245, 255, 0.6); }
+}
+
+/* Fade in down */
+@keyframes fadeInDown {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Logo / Name */
+.logo {
+    font-size: 40px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bolder;
+    white-space: nowrap;
+    word-spacing: 25px;
+    letter-spacing: 8px;
+}
+
+/* Navigation Links */
+ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-right: 200px;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    position: relative;
+    transition: color 0.3s ease;
+    margin-left: 50px;
+}
+
+/* Hover underline animation */
+ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: #ff6600;
+    transition: width 0.3s ease;
+}
+
+ul li a:hover {
+    color: #ff6600;
+}
+
+ul li a:hover::after {
+    width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    ul {
+        gap: 15px;
+    }
+}
+
+.intro{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;     
+    gap: 4rem;               
+    min-height: 100vh;      
+}
+
+.intro-right,
+.intro-left{
+    flex: 1; /* Allow both sides to take equal space */
+    text-align: center; /* Center text inside each */
+}
+
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+    }
+}
