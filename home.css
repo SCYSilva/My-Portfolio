@@ -112,8 +112,98 @@ ul li a:hover::after {
     text-align: center; /* Center text inside each */
 }
 
-@media (max-width: 768px) {
-    .intro {
-        flex-direction: column;
+
+.typing-container {
+    font-family: monospace;
+    font-size: 24px;
+    width: 350px;
+    height: 100%;          /* Make it fill the parent height */
+    display: flex;          /* Use flexbox */
+    justify-content: center; /* Horizontal center */
+    align-items: center;     /* Vertical center */
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto; 
+       /* Optional: center container itself horizontally */
+}
+
+.typing {
+    display: inline;
+    margin-left: 13px;
+    font-weight: bolder;
+}
+
+
+
+    /* blinking cursor */
+    .cursor {
+      display: inline-block;
+      background-color: rgb(255, 255, 255);
+      width: 2px;
+      margin-left: 2px;
+      animation: blink 0.7s infinite;
+      height: 1em;
+      vertical-align: bottom;
     }
+
+    @keyframes blink {
+      0%, 50%, 100% { opacity: 1; }
+      25%, 75% { opacity: 0; }
+    }
+
+    .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 18px;
+}
+
+.social-icons a {
+    color: aliceblue;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    position: relative;
+    -webkit-box-reflect: below 4px linear-gradient(transparent, rgba(0, 0, 0, 0.4));
+}
+
+.social-icons a:hover {
+    transform: scale(1.2) translateY(-4px);
+}
+
+/* Hover colors */
+.social-icons a.linkedin:hover svg {
+    fill: #0077b5; /* LinkedIn blue */
+}
+
+.social-icons a.github:hover svg {
+    fill: #8e44ad; /* Purple */
+}
+
+.social-icons a.gmail:hover svg {
+    fill: #ff887d; /* Gmail red */
+}
+
+/* Alternative: match by href if you don't have classes on <a> */
+.social-icons a[href*="linkedin"]:hover svg {
+    fill: #0077b5;
+}
+.social-icons a[href*="github"]:hover svg {
+    fill: #8e44ad;
+}
+.social-icons a[href*="gmail"]:hover svg {
+    fill: #ff887d;
+}
+/* Add this to your CSS file */
+
+/* Fade & float up animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
