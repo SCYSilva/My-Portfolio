@@ -293,3 +293,67 @@ ul li a:hover::after {
     transform: translateY(20px);
   }
 }
+
+
+/* home.css */
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px); /* start lower */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* normal position */
+  }
+}
+
+.intro-left, 
+.intro-right {
+  opacity: 0;
+  animation: fadeInUp 1.2s ease-out forwards;
+}
+
+.intro-right {
+  animation-delay: 0.4s; /* small delay so right comes after left */
+}
+
+.tape-container {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      background: #0033ff; /* yellow like police tape */
+      transform: rotate(-3deg); /* slanted effect */
+      border: 2px solid black;
+    }
+
+    .tape-container2 {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      background: #facc15; /* yellow like police tape */
+      transform: rotate(3deg); /* slanted effect */
+      border: 2px solid black;
+    }
+
+    .tape {
+      display: inline-block;
+      white-space: nowrap;
+      animation: moveTape 10s linear infinite;
+      font-weight: bold;
+      font-size: 22px;
+      color: black;
+    }
+
+    .tape span {
+      margin: 0 30px;
+    }
+
+    @keyframes moveTape {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
