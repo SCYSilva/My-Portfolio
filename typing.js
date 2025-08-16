@@ -1,4 +1,4 @@
-const words = ["UI Designer", "Designer", "Undergraduate Student"];
+const words = ["Undergraduate Student", "UI/UX Designer", "Web Developer"];
 const typingSpeed = 150;  
 const erasingSpeed = 100; 
 const delayBetween = 1000;
