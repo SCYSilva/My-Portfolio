@@ -550,7 +550,7 @@ ul li a:hover::after {
   background: #2a2a3b;
   padding: 30px;
   border-radius: 50px;
-  height: 600px;
+  height: 650px;
 }
 
 .showcase-content.active {
@@ -569,15 +569,18 @@ ul li a:hover::after {
 .certificate-gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 100px;
+  flex-direction: row;
 }
 
 .certificate-thumb {
-  width: 150px;
+  width: 300px;
   height: auto;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   transition: transform 0.3s;
+  margin-left: 10px;
+  margin-top: 30px;
 }
 
 .certificate-thumb:hover {
