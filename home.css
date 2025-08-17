@@ -322,11 +322,7 @@ ul li a:hover::after {
       position: relative;
       width: 100%;
       overflow: hidden;
-<<<<<<< HEAD
       background: #26baff; /* yellow like police tape */
-=======
-      background: #0033ff; /* yellow like police tape */
->>>>>>> 90d390a2fc6e00f19cfcddf96f721e8c16149cd0
       transform: rotate(-3deg); /* slanted effect */
       border: 2px solid black;
     }
@@ -335,11 +331,7 @@ ul li a:hover::after {
       position: relative;
       width: 100%;
       overflow: hidden;
-<<<<<<< HEAD
       background: #fffc4e; /* yellow like police tape */
-=======
-      background: #facc15; /* yellow like police tape */
->>>>>>> 90d390a2fc6e00f19cfcddf96f721e8c16149cd0
       transform: rotate(3deg); /* slanted effect */
       border: 2px solid black;
     }
@@ -390,7 +382,6 @@ ul li a:hover::after {
     margin-top: -20PX;
 }
 
-<<<<<<< HEAD
 .showcaseccards{
   display: flex;
   justify-content: center;
@@ -402,8 +393,6 @@ ul li a:hover::after {
   margin-bottom: 100px;
 }
 
-=======
->>>>>>> 90d390a2fc6e00f19cfcddf96f721e8c16149cd0
 .projectcardcont{
   width: 290px;
   height: 140px;
@@ -444,11 +433,7 @@ ul li a:hover::after {
   display: block;
   color: #00894d;
   font-weight: 900;
-<<<<<<< HEAD
   font-size: 16px;
-=======
-  font-size: 20px;
->>>>>>> 90d390a2fc6e00f19cfcddf96f721e8c16149cd0
 }
 
 .projectcardcontent .projectcardtext {
@@ -531,7 +516,6 @@ ul li a:hover::after {
 
 .projectcardcont:hover .projectcard .projectlogo .circle5 {
   transform: translate3d(0, 0, 120px);
-<<<<<<< HEAD
 }
 
 .showcase {
@@ -632,6 +616,4 @@ ul li a:hover::after {
   font-size: 40px;
   color: white;
   cursor: pointer;
-=======
->>>>>>> 90d390a2fc6e00f19cfcddf96f721e8c16149cd0
 }
