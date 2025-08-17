@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            background: black;
+            overflow: hidden;
+        }
+        body {
+            --x: 50vw;
+            --y: 50vh;
+            background: radial-gradient(circle at var(--x) var(--y), rgba(255,255,255,0.25) 0%, rgba(255,255,255,0.05) 100px, rgba(0,0,0,1) 250px);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            transition: background 0.05s ease;
+        }
+        svg{
+            height: 90%;
+            width: 90%;
+        }
+
+        .profile-card {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid #04c1fa;
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+            transform-style: preserve-3d;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            margin-bottom: 60px;
+        }
+
+        .profile-card:hover {
+            transform: rotate3d(0.5, 1, 0, 20deg) translateY(-10px);
+            box-shadow: rgba(4, 193, 250, 0.5) 0px 15px 25px;
+        }
+
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+    </style>
+</head>
+
+</style>
+  </style>
+</head>
+<body>
+
+    <body>
+    <div class="page-content">
+
+    <div class="Landingcont">
+        <div class="Landingsubcont1">
+            <svg width="512" height="512" viewBox="0 0 512 512" fill="none" overflow="hidden" xmlns="http://www.w3.org/2000/svg">
+
+<use href="#cube" x="128" y="128" stroke-width="2">
+	<animate attributeName="stroke" dur="6s" repeatCount="indefinite"
+			 values="#FF9AA2;#FFB7B2;#FFDAC1;#E2F0CB;#B5EAD7;#C7CEEA;#FF9AA2"/>
+</use>
+
+<defs>
+	<!-- EVERYTHING TOGETHER --> 
+ 	<g id="cube">
+		<use href="#cube_outline" stroke-linejoin="round" stroke-width="16" fill="url(#stars)"/>
+		<use href="#cube_base" stroke-width=".5"/>
+		<use href="#cube_outline" stroke-linejoin="round" stroke-width="6" stroke="#141417"/>
+	</g>	
+
+	<g id="cube_outline">
+		<path>
+			<animate attributeName="d" dur="1.5s" repeatCount="indefinite" calcMode="spline"
+			keyTimes="0;0.5;0.5;1"
+			keySplines="0.8 0.2 0.6 0.9; 
+						0.8 0.2 0.6 0.9; 
+						0.8 0.2 0.6 0.9"
+			values="M10 64 L128 0 L246 64 L246 192 L128 256 L10 192Z;
+					M40 20 L216 20 L216 108 L216 236 L40 236 L40 172Z;
+					M216 20 L40 20 L40 108 L40 236 L216 236 L216 172Z;
+					M246 64 L128 0 L10 64 L10 192 L128 256 L246 192Z"/>
+		</path>
+	</g>
+
+	<g id="cube_base">
+		<path fill="#fff1"> 
+		<animate attributeName="d" dur="1.5s" repeatCount="indefinite" calcMode="spline"
+			keyTimes="0;0.5;1"
+			keySplines="0.8 0.2 0.6 0.9; 
+						0.8 0.2 0.6 0.9"
+			values="M10 64 L128 0 L246 64 L128 128Z;
+					M40 20 L216 20 L216 108 L40 108Z;
+					M128 0 L246 64 L128 128 L10 64Z"/>
+		</path>
+		<path> <!-- LEFT SIDE -->
+		<animate attributeName="d" dur="1.5s" repeatCount="indefinite" calcMode="spline"
+			keyTimes="0;0.5;0.5;1"
+			keySplines="0.8 0.2 0.6 0.9; 
+						0.8 0.2 0.6 0.9; 
+						0.8 0.2 0.6 0.9"
+			values="M10 64 L128 128 L128 256 L10 192Z;
+					M40 20 L40 108 L40 236 L40 172Z;
+					M216 20 L216 108 L216 236 L216 172Z;
+					M246 64 L128 128 L128 256 L246 192Z"/>
+		<animate attributeName="fill" dur="1.5s" repeatCount="indefinite" keyTimes="0;0.5;0.5;1"
+			values="#fff0;#fff0;#fff2;#fff2"/>
+		</path>
+		<path fill="#407080"> <!-- LEFT SIDE -->
+		<animate attributeName="d" dur="1.5s" repeatCount="indefinite" calcMode="spline"
+			keyTimes="0;0.5;1"
+			keySplines="0.8 0.2 0.6 0.9; 
+						0.8 0.2 0.6 0.9"
+			values="M246 64 L128 128 L128 256 L246 192Z;
+					M216 108 L40 108 L40 236 L216 236Z;
+					M128 128 L10 64 L10 192 L128 256Z"/>
+			<animate attributeName="fill" dur="1.5s" repeatCount="indefinite" keyTimes="0;0.5;1"
+				values="#fff2;#fff1;#fff0"/>
+		</path>
+	</g>
+	<linearGradient id="fade" gradientTransform="rotate(90)">
+    	<stop offset="0" stop-color="#14141700"/>
+    	<stop offset="0.25" stop-color="#141417ff"/>
+    </linearGradient>
+	<linearGradient id="sky" gradientTransform="rotate(90)">
+    	<stop offset="0.5" stop-color="#141417"/>
+    	<stop offset="1" stop-color="#40354a"/>
+    </linearGradient>
+  
+	<!-- STARS PATTERN --> 
+	<pattern id="stars" x="0" y="0" width="50%" height="50%" patternUnits="userSpaceOnUse" patternContentUnits="userSpaceOnUse">
+		<rect width="256" height="256" fill="url(#sky)"/>
+		<use href="#star01" x="24" y="32"  fill="white"/>
+		<use href="#star01" x="64" y="96"  fill="#ad9dcb" transform="rotate(90 80 112)"/>
+		<use href="#star01" x="224" y="102"  fill="#ad9dcb"/>
+		<use href="#star01" x="192" y="112"  fill="#E0E8EA" transform="rotate(90 80 112)"/>
+		<use href="#star02" x="16" y="64"  fill="#ad9dcb"/>
+		<use href="#star03" x="96" y="16"  fill="#E0E8EA"/>
+		<use href="#star04" x="64" y="64"  fill="white"/>
+		<use href="#star04" x="8" y="16"  fill="#ad9dcb"/>
+		<use href="#star04" x="110" y="96"  fill="#E0E8EA"/>
+		<use href="#star02" x="160" y="24"  fill="#ad9dcb"/>
+		<use href="#star03" x="196" y="60"  fill="#E0E8EA"/>
+		<use href="#star04" x="64" y="212"  fill="white"/>
+		<use href="#star04" x="218" y="216"  fill="#ad9dcb"/>
+		<use href="#star03" x="228" y="220"  fill="#E0E8EA"/>
+		<use href="#star02" x="140" y="128"  fill="#ad9dcb"/>
+		<use href="#star03" x="24" y="140"  fill="#E0E8EA"/>
+		<use href="#star04" x="95" y="160"  fill="white"/>
+		<use href="#star04" x="180" y="128"  fill="#ad9dcb"/>
+		<use href="#star03" x="200" y="136"  fill="#E0E8EA"/>
+		<use href="#star10" x="120" y="120"  stroke="#E0E8EA"/>
+		<use href="#star11" x="48" y="64"  stroke="#ad9dcb"/>
+	</pattern>
+	<path id="star01" transform="scale(0.5)">
+		<animate attributeName="d" dur="3s" repeatCount="indefinite" calcMode="spline"
+			keyTimes="0;0.5;1" keySplines="0.8 0.2 0.6 0.9; 0.8 0.2 0.6 0.9"
+			values="M16 0 Q16 16 24 16 Q16 16 16 32 Q16 16 8 16 Q16 16 16 0Z;
+					M16 8 Q16 16 32 16 Q16 16 16 24 Q16 16 0 16 Q16 16 16 8Z;
+					M16 0 Q16 16 24 16 Q16 16 16 32 Q16 16 8 16 Q16 16 16 0Z"/>
+	</path>
+	<circle id="star02">
+		<animate attributeName="r" dur="3s" repeatCount="indefinite" calcMode="spline"
+			keyTimes="0;0.5;1" keySplines="0.8 0.2 0.6 0.9; 0.8 0.2 0.6 0.9"
+			values="0;2;0"/>
+	</circle>
+	<circle id="star03">
+		<animate attributeName="r" dur="6s" repeatCount="indefinite" calcMode="spline"
+			keyTimes="0;0.5;1" keySplines="0.8 0.2 0.6 0.9; 0.8 0.2 0.6 0.9"
+			values="3;1;3"/>
+	</circle>
+	<circle id="star04" r="1"/>
+
+	<path id="star10" stroke-width="2">
+		<animate attributeName="d" dur="5s" repeatCount="indefinite" 
+			keyTimes="0;0.90;0.97;1"
+			keySplines="0 0.4 1 0.2; 0 0.4 1 0.2; 0 0.4 1 0.2"
+			values="M64 0 L64 0Z; M64 0 L64 0Z; M48 12 L0 48Z; M0 48 L0 48Z"/>
+		<animate attributeName="opacity" dur="5s" repeatCount="indefinite"
+			keyTimes="0;0.90;0.97;1"
+			values="1; 1; 0.6; 0"/>
+	</path>
+	<path id="star11" stroke-width="3">
+		<animate attributeName="d" dur="6s" repeatCount="indefinite" delay="3s"
+			keyTimes="0;0.90;0.95;1"
+			keySplines="0 0.4 1 0.2; 0 0.4 1 0.2; 0 0.4 1 0.2"
+			values="M64 0 L64 0Z; M64 0 L64 0Z; M48 12 L0 48Z; M0 48 L0 48Z"/>
+		<animate attributeName="opacity" dur="6s" repeatCount="indefinite" delay="3s"
+			keyTimes="0;0.90;0.95;1"
+			values="1; 1; 0.6; 0"/>
+	</path>
+</defs>
+</svg>
+        </div>
+
+        <div class="Landingsubcont2" style="margin-right: 30px;">
+        <div class="Landingsubcontimg">
+            <div class="profile-card">
+                <img src="images/profile picture.png" alt="Profile" class="profile-pic"
+            >
+            </div>
+        </div>
+          <h1 class="Landingsubcont2h1">CHANDUPA SILVA</h1>
+          <div class="typing-container" style="text-align: center;">
+               <p class="typing">Welcome to My Portfolio </p>
+          </div>
+
+		<a href="home.html"><button class="glow-btn">VIEW</button></a>
+
+
+        <div class="social-icons" style="display: flex; justify-content: center; align-items: center; gap: 20px; margin-top: 18px; width: 100%;">
+            <div style="margin: 0 auto; display: flex; gap: 20px;">
+                <a href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank" title="LinkedIn" class="social-link">
+                     <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
+                         <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 10.28h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39v4.58h-3v-9h2.89v1.23h.04c.4-.76 1.38-1.56 2.85-1.56 3.05 0 3.61 2.01 3.61 4.62v4.71z"/>
+                     </svg>
+                </a>
+
+                <a href="https://github.com/YOUR_GITHUB" target="_blank" title="GitHub" class="social-link">
+                     <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
+                         <path d="M12 .5c-6.62 0-12 5.38-12 12 0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.304.762-1.604-2.665-.304-5.466-1.334-5.466-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.119 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.803 5.625-5.475 5.921.43.371.823 1.102.823 2.222v3.293c0 .322.218.694.825.576 4.765-1.587 8.2-6.086 8.2-11.385 0-6.62-5.38-12-12-12z"/>
+                     </svg>
+                </a>
+
+                <a href="mailto:YOUR_EMAIL@gmail.com" title="Gmail" class="social-link">
+                     <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
+                         <path d="M12 13.065l-11.99-8.065v16h23.98v-16zm11.99-9.065h-23.98c-.553 0-1 .447-1 1v.217l12 8.065 12-8.065v-.217c0-.553-.447-1-1-1z"/>
+                     </svg>
+                </a>
+
+            </div>
+        </div>
+
+        </div>   
+
+
+        <div class="Landingsubcont3">
+
+              <svg width="512" height="512" viewBox="0 0 512 512" fill="none" overflow="hidden" xmlns="http://www.w3.org/2000/svg">
+
+<use href="#cube" x="128" y="128" stroke-width="2">
+	<animate attributeName="stroke" dur="6s" repeatCount="indefinite"
+			 values="#FF9AA2;#FFB7B2;#FFDAC1;#E2F0CB;#B5EAD7;#C7CEEA;#FF9AA2"/>
+</use>
+
+<defs>
+	<!-- EVERYTHING TOGETHER --> 
+ 	<g id="cube">
+		<use href="#cube_outline" stroke-linejoin="round" stroke-width="16" fill="url(#stars)"/>
+		<use href="#cube_base" stroke-width=".5"/>
+		<use href="#cube_outline" stroke-linejoin="round" stroke-width="6" stroke="#141417"/>
+	</g>	
+
+	<g id="cube_outline">
+		<path>
+			<animate attributeName="d" dur="1.5s" repeatCount="indefinite" calcMode="spline"
+			keyTimes="0;0.5;0.5;1"
+			keySplines="0.8 0.2 0.6 0.9; 
+						0.8 0.2 0.6 0.9; 
+						0.8 0.2 0.6 0.9"
+			values="M10 64 L128 0 L246 64 L246 192 L128 256 L10 192Z;
+					M40 20 L216 20 L216 108 L216 236 L40 236 L40 172Z;
+					M216 20 L40 20 L40 108 L40 236 L216 236 L216 172Z;
+					M246 64 L128 0 L10 64 L10 192 L128 256 L246 192Z"/>
+		</path>
+	</g>
+
+	<g id="cube_base">
+		<path fill="#fff1"> 
+		<animate attributeName="d" dur="1.5s" repeatCount="indefinite" calcMode="spline"
+			keyTimes="0;0.5;1"
+			keySplines="0.8 0.2 0.6 0.9; 
+						0.8 0.2 0.6 0.9"
+			values="M10 64 L128 0 L246 64 L128 128Z;
+					M40 20 L216 20 L216 108 L40 108Z;
+					M128 0 L246 64 L128 128 L10 64Z"/>
+		</path>
+		<path> <!-- LEFT SIDE -->
+		<animate attributeName="d" dur="1.5s" repeatCount="indefinite" calcMode="spline"
+			keyTimes="0;0.5;0.5;1"
+			keySplines="0.8 0.2 0.6 0.9; 
+						0.8 0.2 0.6 0.9; 
+						0.8 0.2 0.6 0.9"
+			values="M10 64 L128 128 L128 256 L10 192Z;
+					M40 20 L40 108 L40 236 L40 172Z;
+					M216 20 L216 108 L216 236 L216 172Z;
+					M246 64 L128 128 L128 256 L246 192Z"/>
+		<animate attributeName="fill" dur="1.5s" repeatCount="indefinite" keyTimes="0;0.5;0.5;1"
+			values="#fff0;#fff0;#fff2;#fff2"/>
+		</path>
+		<path fill="#407080"> <!-- LEFT SIDE -->
+		<animate attributeName="d" dur="1.5s" repeatCount="indefinite" calcMode="spline"
+			keyTimes="0;0.5;1"
+			keySplines="0.8 0.2 0.6 0.9; 
+						0.8 0.2 0.6 0.9"
+			values="M246 64 L128 128 L128 256 L246 192Z;
+					M216 108 L40 108 L40 236 L216 236Z;
+					M128 128 L10 64 L10 192 L128 256Z"/>
+			<animate attributeName="fill" dur="1.5s" repeatCount="indefinite" keyTimes="0;0.5;1"
+				values="#fff2;#fff1;#fff0"/>
+		</path>
+	</g>
+	<linearGradient id="fade" gradientTransform="rotate(90)">
+    	<stop offset="0" stop-color="#14141700"/>
+    	<stop offset="0.25" stop-color="#141417ff"/>
+    </linearGradient>
+	<linearGradient id="sky" gradientTransform="rotate(90)">
+    	<stop offset="0.5" stop-color="#141417"/>
+    	<stop offset="1" stop-color="#40354a"/>
+    </linearGradient>
+  
+	<!-- STARS PATTERN --> 
+	<pattern id="stars" x="0" y="0" width="50%" height="50%" patternUnits="userSpaceOnUse" patternContentUnits="userSpaceOnUse">
+		<rect width="256" height="256" fill="url(#sky)"/>
+		<use href="#star01" x="24" y="32"  fill="white"/>
+		<use href="#star01" x="64" y="96"  fill="#ad9dcb" transform="rotate(90 80 112)"/>
+		<use href="#star01" x="224" y="102"  fill="#ad9dcb"/>
+		<use href="#star01" x="192" y="112"  fill="#E0E8EA" transform="rotate(90 80 112)"/>
+		<use href="#star02" x="16" y="64"  fill="#ad9dcb"/>
+		<use href="#star03" x="96" y="16"  fill="#E0E8EA"/>
+		<use href="#star04" x="64" y="64"  fill="white"/>
+		<use href="#star04" x="8" y="16"  fill="#ad9dcb"/>
+		<use href="#star04" x="110" y="96"  fill="#E0E8EA"/>
+		<use href="#star02" x="160" y="24"  fill="#ad9dcb"/>
+		<use href="#star03" x="196" y="60"  fill="#E0E8EA"/>
+		<use href="#star04" x="64" y="212"  fill="white"/>
+		<use href="#star04" x="218" y="216"  fill="#ad9dcb"/>
+		<use href="#star03" x="228" y="220"  fill="#E0E8EA"/>
+		<use href="#star02" x="140" y="128"  fill="#ad9dcb"/>
+		<use href="#star03" x="24" y="140"  fill="#E0E8EA"/>
+		<use href="#star04" x="95" y="160"  fill="white"/>
+		<use href="#star04" x="180" y="128"  fill="#ad9dcb"/>
+		<use href="#star03" x="200" y="136"  fill="#E0E8EA"/>
+		<use href="#star10" x="120" y="120"  stroke="#E0E8EA"/>
+		<use href="#star11" x="48" y="64"  stroke="#ad9dcb"/>
+	</pattern>
+	<path id="star01" transform="scale(0.5)">
+		<animate attributeName="d" dur="3s" repeatCount="indefinite" calcMode="spline"
+			keyTimes="0;0.5;1" keySplines="0.8 0.2 0.6 0.9; 0.8 0.2 0.6 0.9"
+			values="M16 0 Q16 16 24 16 Q16 16 16 32 Q16 16 8 16 Q16 16 16 0Z;
+					M16 8 Q16 16 32 16 Q16 16 16 24 Q16 16 0 16 Q16 16 16 8Z;
+					M16 0 Q16 16 24 16 Q16 16 16 32 Q16 16 8 16 Q16 16 16 0Z"/>
+	</path>
+	<circle id="star02">
+		<animate attributeName="r" dur="3s" repeatCount="indefinite" calcMode="spline"
+			keyTimes="0;0.5;1" keySplines="0.8 0.2 0.6 0.9; 0.8 0.2 0.6 0.9"
+			values="0;2;0"/>
+	</circle>
+	<circle id="star03">
+		<animate attributeName="r" dur="6s" repeatCount="indefinite" calcMode="spline"
+			keyTimes="0;0.5;1" keySplines="0.8 0.2 0.6 0.9; 0.8 0.2 0.6 0.9"
+			values="3;1;3"/>
+	</circle>
+	<circle id="star04" r="1"/>
+
+	<path id="star10" stroke-width="2">
+		<animate attributeName="d" dur="5s" repeatCount="indefinite" 
+			keyTimes="0;0.90;0.97;1"
+			keySplines="0 0.4 1 0.2; 0 0.4 1 0.2; 0 0.4 1 0.2"
+			values="M64 0 L64 0Z; M64 0 L64 0Z; M48 12 L0 48Z; M0 48 L0 48Z"/>
+		<animate attributeName="opacity" dur="5s" repeatCount="indefinite"
+			keyTimes="0;0.90;0.97;1"
+			values="1; 1; 0.6; 0"/>
+	</path>
+	<path id="star11" stroke-width="3">
+		<animate attributeName="d" dur="6s" repeatCount="indefinite" delay="3s"
+			keyTimes="0;0.90;0.95;1"
+			keySplines="0 0.4 1 0.2; 0 0.4 1 0.2; 0 0.4 1 0.2"
+			values="M64 0 L64 0Z; M64 0 L64 0Z; M48 12 L0 48Z; M0 48 L0 48Z"/>
+		<animate attributeName="opacity" dur="6s" repeatCount="indefinite" delay="3s"
+			keyTimes="0;0.90;0.95;1"
+			values="1; 1; 0.6; 0"/>
+	</path>
+</defs>
+</svg>
+
+        </div>
+        
+
+    </div>
+</div>
+<script>
+  document.addEventListener('mousemove', e => {
+    document.body.style.setProperty('--x', `${e.clientX}px`);
+    document.body.style.setProperty('--y', `${e.clientY}px`);
+  });
+</script>
+</body>
+</html>
