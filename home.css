@@ -527,37 +527,58 @@ ul li a:hover::after {
 }
 
 .showcase-card {
-  background: #2a2a3b;
-  border-radius: 10px;
-  padding: 20px;
-  width: 200px;
-  text-align: center;
+  width: 171px;
+  height: 56px;
+  border-radius: 15px;
   cursor: pointer;
   transition: 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  background: linear-gradient(
+    to bottom right,
+    #2e8eff 0%,
+    rgba(46, 142, 255, 0) 30%
+  );
+  background-color: rgba(46, 142, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.showcase-card:hover {
-  background: #3a3a4b;
+.showcase-card:hover,
+.showcase-card:focus {
+  background-color: rgba(46, 142, 255, 0.7);
+  box-shadow: 0 0 10px rgba(46, 142, 255, 0.5);
+  outline: none;
 }
 
-.showcase-card.active {
-  background: #4a4a6b;
+.user-profile-inner {
+  width: 167px;
+  height: 52px;
+  border-radius: 13px;
+  background-color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  color: #fff;
+  font-weight: 600;
 }
+
 
 .showcase-content {
   display: none;
-  background: #2a2a3b;
+  background: #212121;
   padding: 30px;
   border-radius: 50px;
-  height: 650px;
+  height: auto;
+  padding-bottom: 80px;
+  margin-bottom: 50px;
+  padding-left: 135px;
 }
 
 .showcase-content.active {
   display: block;
 }
 
-/* Projects list */
 .project-item {
   margin-bottom: 10px;
   padding: 10px;
@@ -565,7 +586,34 @@ ul li a:hover::after {
   border-radius: 6px;
 }
 
-/* Certificate thumbnails */
+.certcard {
+ display: flex;
+ flex-wrap: wrap;
+ border-radius: 30px;
+ background: #212121;
+ box-shadow: 15px 15px 30px rgb(25, 25, 25),
+             -15px -15px 30px rgb(60, 60, 60);
+  padding-left: 40px;
+  padding-right: 40px;
+  /*padding-bottom: 150px;*/
+  margin-top: 30px;
+  flex-direction: column;
+}
+
+.certcard h5{
+  font-size: 18px;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  margin-top: 35px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.certcard p{
+  margin-bottom: 25px;
+  margin-top: -20px;
+  color: #8d8d8d;
+}
+
 .certificate-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -579,7 +627,6 @@ ul li a:hover::after {
   border-radius: 10px;
   cursor: pointer;
   transition: transform 0.3s;
-  margin-left: 10px;
   margin-top: 30px;
 }
 
