@@ -368,11 +368,12 @@ ul li a:hover::after {
     margin-top: 250px;
     margin-left: 170px;
     margin-right: 170px;
-    gap: 250px;
+    gap: 100px;
 }
 
 .aboutme-left {
-    max-width: 400px;
+    width: 1000px;
+    height: auto;
     text-align: left;
 }
 
