@@ -709,7 +709,7 @@ ul li a:hover::after {
 .projectscardinner {
   top: 0;
   position: absolute;
-  background-image: url("images/projctcard1bg.png");
+  background-image: url("images/projctcard1bg.jpg");
   width: 100%;
   height: 100%;
   border-radius: 30px;

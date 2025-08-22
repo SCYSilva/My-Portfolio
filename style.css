@@ -10,7 +10,7 @@
 .Landingsubcont1,
 .Landingsubcont2,
 .Landingsubcont3 {
-    text-align: center; /* Center text inside each */
+    text-align: center; 
 }
 
 @media (max-width: 768px) {
