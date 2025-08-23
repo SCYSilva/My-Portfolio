@@ -1138,3 +1138,71 @@ ul li a:hover::after {
   background-color: #00708f;
   transform: translateX(-50%) rotate(45deg);
 }
+
+.secondaryskill {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 100px;
+  gap: 180px;
+}
+
+.outercircle {
+  --angle: 0deg; /* dynamic progress */
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #00a1ce 0deg,
+    #00a1ce var(--angle),
+    #0d0d0d var(--angle)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: background 1s linear;
+
+  box-shadow: 0 0 15px rgba(0, 112, 143, 0.8), 0 0 25px rgba(0, 112, 143, 0.6),
+    0 0 40px rgba(0, 112, 143, 0.5);
+}
+
+.outercircle::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  border-radius: 50%;
+  z-index: -1;
+  filter: blur(12px);
+}
+
+.innercircle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: #0d0d0d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+  position: absolute;
+}
+
+.skillcircle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skillcircle p {
+  font-size: 1.2rem;
+  color: #00c8ff;
+  margin-top: 30px;
+  text-align: center;
+  font-weight: bold;
+}
