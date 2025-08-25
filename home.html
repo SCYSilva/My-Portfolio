@@ -596,6 +596,7 @@
         method="POST">
         
         <div class="field">
+          <div class="formfirst" style="display: flex; flex-direction: column; margin-bottom: 10px; gap: 20px;">
           <label for="name">Name</label>
            <input
            id="name"
@@ -614,6 +615,7 @@
             placeholder="you@example.com"
             required/>
           </div>
+        </div>
 
           <div class="field">
             <label for="message">Message</label>
@@ -648,7 +650,7 @@
       });
 
       if (res.ok) {
-        status.innerHTML = "<p style='color:blue;'>Message sent successfully! </p>";
+        status.innerHTML = "<p style='color:#00c8ff;'>Message sent successfully! </p>";
         form.reset(); 
       } else {
         status.innerHTML = "<p style='color:red;'>Error sending message</p>";
