@@ -1209,9 +1209,10 @@ ul li a:hover::after {
       rgba(0, 200, 255, 0) 40%
     ),
     var(--bg);
-  padding: 64px 20px;
   display: flex;
   justify-content: center;
+  margin-top: 150px;
+  width: 60%;
 }
 
 .contact-card {
@@ -1230,15 +1231,18 @@ ul li a:hover::after {
   font-size: clamp(1.6rem, 2.2vw, 2rem);
   color: var(--text);
   letter-spacing: 0.3px;
+  text-align: center;
 }
 
 .contact-card .subtitle {
   margin: 0 0 22px;
   color: var(--muted);
   font-size: 0.98rem;
+  text-align: center;
 }
 
 .contact-form {
+  margin-top: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
