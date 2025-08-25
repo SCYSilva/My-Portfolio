@@ -18,16 +18,11 @@ nav {
   z-index: 1000;
   transform: translateY(-20px);
   opacity: 0;
-
-  /* Animations */
   animation: fadeInDown 1s ease forwards, glowPulse 2s infinite ease-in-out;
-
-  /* Glow effect */
-  border-bottom: 3px solid #00f5ff; /* main glow color */
-  box-shadow: 0 4px 12px rgba(0, 245, 255, 0.7); /* glow spread */
+  border-bottom: 3px solid #00708f;
+  box-shadow: 0 4px 12px #00708f(0, 245, 255, 0.7);
 }
 
-/* Glow pulsing */
 @keyframes glowPulse {
   0% {
     box-shadow: 0 4px 12px rgba(0, 245, 255, 0.6);
@@ -230,14 +225,14 @@ ul li a:hover::after {
   border: none;
   box-shadow: 1px 1px rgba(107, 221, 215, 0.37);
   padding: 5px 10px;
-  background-color: rgb(59, 190, 230);
+  background-color: rgb(6, 184, 255);
   color: #fff;
   font-family: Roboto, sans-serif;
   font-weight: 505;
   font-size: 16px;
   line-height: 1;
   cursor: pointer;
-  filter: drop-shadow(0 0 10px rgba(59, 190, 230, 0.568));
+  filter: drop-shadow(0 0 10px rgba(16, 141, 179, 0.568));
   transition: 0.5s linear;
 }
 
@@ -567,8 +562,8 @@ ul li a:hover::after {
 
 .showcase-card:hover,
 .showcase-card:focus {
-  background-color: rgba(46, 142, 255, 0.7);
-  box-shadow: 0 0 10px rgba(46, 142, 255, 0.5);
+  background-color: #00c8ff(46, 142, 255, 0.7);
+  box-shadow: 0 0 10px #00c8ff(46, 142, 255, 0.5);
   outline: none;
 }
 
@@ -594,7 +589,7 @@ ul li a:hover::after {
   padding-bottom: 80px;
   margin-bottom: 50px;
   padding-left: 135px;
-  box-shadow: 5px 5px 5px rgb(46, 142, 255), -5px -5px 5px rgb(60, 60, 60);
+  box-shadow: 5px 5px 5px #00c8ff, -5px -5px 5px rgb(60, 60, 60);
   align-items: center;
   justify-content: center;
   flex-direction: row;
@@ -1189,7 +1184,7 @@ ul li a:hover::after {
   justify-content: center;
   font-weight: bold;
   font-size: 1.2rem;
-  color: rgb(255, 255, 255);
+  color: #00c8ff;
   position: absolute;
 }
 
