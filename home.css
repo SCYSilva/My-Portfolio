@@ -1212,12 +1212,12 @@ ul li a:hover::after {
   display: flex;
   justify-content: center;
   margin-top: 150px;
-  width: 60%;
+  margin-bottom: 200px;
 }
 
 .contact-card {
-  width: 100%;
-  max-width: 720px;
+  width: 70%;
+  height: auto;
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 20px;
@@ -1232,6 +1232,7 @@ ul li a:hover::after {
   color: var(--text);
   letter-spacing: 0.3px;
   text-align: center;
+  color: #1cceff;
 }
 
 .contact-card .subtitle {
@@ -1239,6 +1240,12 @@ ul li a:hover::after {
   color: var(--muted);
   font-size: 0.98rem;
   text-align: center;
+  margin-top: 40px;
+  line-height: 2;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  font-family: monospace;
+  color: #00a1ce;
 }
 
 .contact-form {
@@ -1286,7 +1293,7 @@ textarea:focus {
   box-shadow: 0 0 0 4px rgba(0, 200, 255, 0.12);
 }
 
-.btn {
+.formsubbtn {
   grid-column: 1 / -1;
   background: var(--accent);
   color: #00131a;
@@ -1298,11 +1305,13 @@ textarea:focus {
   cursor: pointer;
   transition: transform 0.06s ease, box-shadow 0.2s ease, filter 0.2s ease;
   box-shadow: 0 8px 18px rgba(0, 200, 255, 0.28);
+  margin-top: 40px;
+  margin-bottom: 50px;
 }
-.btn:hover {
+.formsubbtn:hover {
   filter: brightness(1.05);
 }
-.btn:active {
+.formsubbtn:active {
   transform: translateY(1px);
 }
 

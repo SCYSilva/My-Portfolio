@@ -586,53 +586,79 @@
       <div class="contact-card">
         <h2>Get in touch</h2>
         <p class="subtitle">
-          Have a question or a project? Send me a message 👇
+          I'm interested in freelance opportunities.<br />However, if you have
+          other requests or questions, don't hesitate to contact me.
         </p>
 
-        <form
-          class="contact-form"
-          action="#"
-          method="post"
-          autocomplete="on"
-          novalidate
-        >
-          <div class="field">
-            <label for="name">Name</label>
-            <input
-              id="name"
-              name="name"
-              type="text"
-              placeholder="Your name"
-              required
-            />
+        <form class="contact-form"
+        id="contact-form"
+        action="https://formspree.io/f/mvgboope"
+        method="POST">
+        
+        <div class="field">
+          <label for="name">Name</label>
+           <input
+           id="name"
+           name="name"
+           type="text"
+           placeholder="Your name"
+           required/>
           </div>
 
           <div class="field">
             <label for="email">Email</label>
             <input
-              id="email"
-              name="email"
-              type="email"
-              placeholder="you@example.com"
-              required
-            />
+            id="email"
+            name="email"
+            type="email"
+            placeholder="you@example.com"
+            required/>
           </div>
 
           <div class="field">
             <label for="message">Message</label>
             <textarea
-              id="message"
-              name="message"
-              rows="5"
-              placeholder="Tell me a bit about it…"
-              required
-            ></textarea>
-          </div>
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Tell me a bit about it…"
+            required>
+          </textarea>
+        </div>
 
-          <button class="btn" type="submit">Send Message</button>
-        </form>
-      </div>
-    </section>
+        <button class="formsubbtn" type="submit">Send Message</button>
+      </form>
+
+      <div id="status"></div> 
+
+<script>
+  const form = document.getElementById("contact-form");
+  const status = document.getElementById("status");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    try {
+      const res = await fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: { "Accept": "application/json" } 
+      });
+
+      if (res.ok) {
+        status.innerHTML = "<p style='color:blue;'>Message sent successfully! </p>";
+        form.reset(); 
+      } else {
+        status.innerHTML = "<p style='color:red;'>Error sending message</p>";
+      }
+    } catch (err) {
+      status.innerHTML = "<p style='color:red;'>Network error</p>";
+    }
+  });
+</script>
+
 
     <script src="showcase.js"></script>
     <script src="typing.js"></script>
