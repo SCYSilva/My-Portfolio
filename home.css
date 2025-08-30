@@ -1250,20 +1250,26 @@ ul li a:hover::after {
 
 .contact-form {
   margin-top: 100px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-}
-
-.contact-form .field {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
 }
 
-/* Make message full width */
-.contact-form .field:nth-of-type(3) {
-  grid-column: 1 / -1;
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300%;
+}
+
+.formfirst {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  gap: 40px;
+  align-items: center;
 }
 
 label {
@@ -1294,7 +1300,6 @@ textarea:focus {
 }
 
 .formsubbtn {
-  grid-column: 1 / -1;
   background: #00aada;
   color: #00131a;
   border: none;
@@ -1307,6 +1312,7 @@ textarea:focus {
   box-shadow: 0 8px 18px rgba(0, 200, 255, 0.28);
   margin-top: 40px;
   margin-bottom: 50px;
+  width: 50%;
 }
 .formsubbtn:hover {
   filter: brightness(1.05);
